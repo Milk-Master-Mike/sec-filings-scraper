@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sec-filings-scraper"
+version = "0.1.0"
+description = "Fair-access SEC filings collector for the Market Research Workbench"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Milk-Master-Mike" }]
+dependencies = [
+  "fastapi>=0.115,<1",
+  "httpx>=0.27,<1",
+  "pydantic>=2.8,<3",
+  "pydantic-settings>=2.4,<3",
+  "uvicorn>=0.30,<1",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.2,<9", "pytest-asyncio>=0.23,<1"]
+
+[project.scripts]
+sec-filings-scraper = "sec_filings_scraper.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sec_filings_scraper"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.market-data-contracts]
+# Replace the internal compatibility models when this package is released.
+compatible-version = ">=0.1.0,<0.2.0"
+

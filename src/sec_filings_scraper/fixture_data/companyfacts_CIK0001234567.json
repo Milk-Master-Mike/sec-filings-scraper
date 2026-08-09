@@ -1,0 +1,62 @@
+{
+  "cik": 1234567,
+  "entityName": "Example Technology Corporation",
+  "facts": {
+    "dei": {
+      "EntityCommonStockSharesOutstanding": {
+        "label": "Entity Common Stock, Shares Outstanding",
+        "description": "Sanitized example fixture value.",
+        "units": {
+          "shares": [
+            {
+              "end": "2023-10-20",
+              "val": 950000,
+              "accn": "0001234567-23-000010",
+              "fy": 2023,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2023-11-01",
+              "frame": "CY2023Q3I"
+            },
+            {
+              "end": "2024-10-18",
+              "val": 1000000,
+              "accn": "0001234567-24-000010",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2024-11-01",
+              "frame": "CY2024Q3I"
+            }
+          ]
+        }
+      },
+      "EntityPublicFloat": {
+        "label": "Entity Public Float",
+        "description": "Sanitized example issuer-reported aggregate market value.",
+        "units": {
+          "USD": [
+            {
+              "end": "2023-06-30",
+              "val": 6500000,
+              "accn": "0001234567-23-000010",
+              "fy": 2023,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2023-11-01"
+            },
+            {
+              "end": "2024-06-28",
+              "val": 7500000,
+              "accn": "0001234567-24-000010",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2024-11-01"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

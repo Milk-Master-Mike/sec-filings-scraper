@@ -1,0 +1,20 @@
+{
+  "0": {
+    "cik_str": 1234567,
+    "ticker": "EXMPL",
+    "title": "Example Technology Corporation",
+    "exchange": "Example Exchange"
+  },
+  "1": {
+    "cik_str": 2345678,
+    "ticker": "ALPH",
+    "title": "Alpha Example Holdings",
+    "exchange": "Example Exchange"
+  },
+  "2": {
+    "cik_str": 3456789,
+    "ticker": "ALPB",
+    "title": "Alpha Example Holdings",
+    "exchange": "Example Exchange"
+  }
+}

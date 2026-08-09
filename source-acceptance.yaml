@@ -1,0 +1,28 @@
+version: 1
+sources:
+  - id: sec-company-tickers
+    owner: U.S. Securities and Exchange Commission
+    base_url: https://www.sec.gov/files/company_tickers.json
+    authentication: none
+    purpose: ticker, company name, and CIK resolution
+    redistribution: normalized identifiers and provenance only
+  - id: sec-submissions
+    owner: U.S. Securities and Exchange Commission
+    base_url: https://data.sec.gov/submissions/
+    authentication: none
+    purpose: filing metadata and filing events
+    redistribution: normalized metadata and source links only
+  - id: sec-companyfacts
+    owner: U.S. Securities and Exchange Commission
+    base_url: https://data.sec.gov/api/xbrl/companyfacts/
+    authentication: none
+    purpose: shares outstanding and issuer-reported public float facts
+    redistribution: normalized facts and provenance only
+controls:
+  user_agent_required: true
+  max_requests_per_second: 8
+  bounded_concurrency: 2
+  cache_required: true
+  captcha_or_access_bypass: prohibited
+  raw_filing_redistribution: prohibited
+
