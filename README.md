@@ -1,5 +1,7 @@
 # SEC Filings Scraper
 
+> **Archived:** This service now lives in [`market-research-platform`](https://github.com/Milk-Master-Mike/market-research-platform/tree/main/services/sec-filings). Its full Git history was preserved in the monorepo.
+
 A focused SEC collector for the Market Research Workbench. It resolves U.S.
 issuer tickers and company names, lists recent filings, and extracts dated
 shares-outstanding and issuer-reported public-float facts with complete
